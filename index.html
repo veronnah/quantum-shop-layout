@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum</title>
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo">QUANTUM</div>
+        <div class="header__search-box">
+          <input class="header__search-box__input" placeholder="Search goods..." type="text">
+          <div class="header__select-dropdown">
+            <div data-select class="header__select">
+              <div data-select-title class="header__select-title">CATEGORY</div>
+              <div class="header__select-items__dropdown hidden">
+                <div data-select-item="mobile" class="header__select-item">Mobile</div>
+                <div data-select-item="tablet" class="header__select-item">Tablet</div>
+                <div data-select-item="laptop" class="header__select-item">Laptop</div>
+              </div>
+            </div>
+          </div>
+          <select name="select" id="selectReal" value="none" class="hidden">
+            <option value="none">CATEGORY</option>
+            <option value="mobile">Mobile</option>
+            <option value="tablet">Tablet</option>
+            <option value="laptop">Laptop</option>
+          </select>
+          <button class="header__search-box__btn">
+            <img class="header__search-icon" src="./img/icons/search-icon.png" alt="">
+          </button>
+        </div>
+        <div class="header__fav-icons">
+          <a href="#" class="header__fav-link">
+            <span class="header__fav-icon after__circle">
+              <img src="./img/icons/cart-icon.svg" alt="">
+            </span>
+            <span class="header__fav-text">2 items</span>
+          </a>
+          <a href="#" class="header__fav-link">
+            <span class="header__fav-icon">
+              <img src="./img/icons/wishlist-icon.svg" alt="">
+            </span>
+            <span class="header__fav-text">Wish list</span>
+          </a>
+          <a href="#" class="header__fav-link">
+            <span class="header__fav-icon">
+              <img src="./img/icons/user-icon.svg" alt="">
+            </span>
+            <span class="header__fav-text">Sign in</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-categories">
+          <div class="header__bottom-allcategories">
+            <span class="allcategories__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: gray;
+                      fill-rule: evenodd;
+                    }
+                  </style>
+                </defs>
+                <path id="menu_icon" data-name="menu icon" class="cls-1"
+                  d="M565,1883v2h18v-2H565Zm0,7h18v-2H565v2Zm0,5h18v-2H565v2Z" transform="translate(-565 -1883)" />
+              </svg>
+            </span>
+            <span class="allcategories__text">All categories</span>
+          </div>
+          <div class="header__bottom-deals">
+            <span>Super Deals</span>
+            <span>Featured Brands</span>
+            <span>Collections</span>
+            <span>Bestselling</span>
+          </div>
+          <div class="header__bottom-help-settings">
+            <div class="help-settings__first">
+              <div class="header__select-dropdown">
+                <div data-select class="header__select header__select-bottom">
+                  <div data-select-title class="header__select-title">Help</div>
+                  <div class="header__select-items__dropdown hidden">
+                    <div data-select-item="mobile" class="header__select-item">Help</div>
+                    <div data-select-item="tablet" class="header__select-item">Help</div>
+                    <div data-select-item="laptop" class="header__select-item">Help</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="help-settings__second">
+              <div class="header__select-dropdown">
+                <div data-select class="header__select header__select-bottom">
+                  <div data-select-title class="header__select-title">USD</div>
+                  <div class="header__select-items__dropdown hidden">
+                    <div data-select-item="mobile" class="header__select-item">RUB</div>
+                    <div data-select-item="tablet" class="header__select-item">ZL</div>
+                    <div data-select-item="laptop" class="header__select-item">UAH</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="help-settings__third">
+              <div class="header__select-dropdown">
+                <div data-select class="header__select header__select-bottom">
+                  <div data-select-title class="header__select-title">Language</div>
+                  <div class="header__select-items__dropdown hidden">
+                    <div data-select-item="mobile" class="header__select-item">EN</div>
+                    <div data-select-item="tablet" class="header__select-item">RU</div>
+                    <div data-select-item="laptop" class="header__select-item">PL</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="carousel">
+    <div class="container">
+      <div class="carousel owl-carousel owl-theme" id="carousel-header">
+        <div class="carousel__item">
+          <h2 class="carousel__item-title">
+            The Universe Through A Child&#39;S Eyes
+          </h2>
+          <div class="carousel__item-text">
+            <p>Start sales</p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <h2 class="carousel__item-title">
+            The Universe Through A Child&#39;S Eyes
+          </h2>
+          <div class="carousel__item-text">
+            <p>Start sales</p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <h2 class="carousel__item-title">
+            The Universe Through A Child&#39;S Eyes
+          </h2>
+          <div class="carousel__item-text">
+            <p>Start sales</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="promo">
+    <div class="container">
+      <div class="promo__cards">
+        <div class="card first-card">
+          <div class="first-card__text">
+            Astronomy Or Astrology
+            <p>Start sales</p>
+          </div>
+          <div class="first-card__bg">
+            <img src="./img/headphones.jpg" alt="">
+          </div>
+        </div>
+        <div class="card second-card">
+          <div class="second-card__text">
+            The Basics Of Buying <br>
+            A Telescope
+            <p>Start sales</p>
+          </div>
+        </div>
+        <div class="card third-card">
+          <div class="third-card__top">
+            <div class="third-card__top-pic">
+              <img src="./img/pencil.jpg" alt="">
+            </div>
+            <div class="third-card__top-text">
+              Getting Free Publicity
+              <p>For Your Business</p>
+            </div>
+          </div>
+          <div class="third-card__bottom">
+            <div class="third-card__bottom-pic">
+              <img src="./img/watch.jpg" alt="">
+            </div>
+            <div class="third-card__bottom-text">
+              Getting Free Publicity
+              <p>For Your Business</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main__content">
+    <div class="container">
+      <div class="main__content-flex">
+        <aside>
+          <div class="aside__main-menu">
+            <div class="aside__menu-item">
+              <span class="item-icon">
+                <img src="./img/icons/desctop-icon.svg" alt="">
+              </span>
+              <span class="item-text">Computers</span>
+              <span class="item-arrow">
+                <img src="./img/icons/arrowr-icon.svg" alt="">
+              </span>
+            </div>
+            <div class="aside__menu-item">
+              <span class="item-icon">
+                <img src="./img/icons/imac-icon.svg" alt="">
+              </span>
+              <span class="item-text">Apple Computers</span>
+              <span class="item-arrow">
+                <img src="./img/icons/arrowr-icon.svg" alt="">
+              </span>
+            </div>
+            <div class="aside__menu-item">
+              <span class="item-icon">
+                <img src="./img/icons/laptop-icon.svg" alt="">
+              </span>
+              <span class="item-text">Laptops</span>
+              <span class="item-arrow">
+                <img src="./img/icons/arrowr-icon.svg" alt="">
+              </span>
+            </div>
+            <div class="aside__menu-item">
+              <span class="item-icon">
+                <img src="./img/icons/keyboard-icon.svg" alt="">
+              </span>
+              <span class="item-text">Friends</span>
+              <span class="item-arrow">
+                <img src="./img/icons/arrowr-icon.svg" alt="">
+              </span>
+            </div>
+            <div class="aside__menu-item">
+              <span class="item-icon">
+                <img src="./img/icons/memory-icon.svg" alt="">
+              </span>
+              <span class="item-text">Computer Components</span>
+              <span class="item-arrow">
+                <img src="./img/icons/arrowr-icon.svg" alt="">
+              </span>
+            </div>
+            <div class="aside__menu-item">
+              <span class="item-icon">
+                <img src="./img/icons/speaker-icon.svg" alt="">
+              </span>
+              <span class="item-text">Accessories</span>
+              <span class="item-arrow">
+                <img src="./img/icons/arrowr-icon.svg" alt="">
+              </span>
+            </div>
+            <div class="aside__menu-item">
+              <span class="item-icon">
+                <img src="./img/icons/phone-icon.svg" alt="">
+              </span>
+              <span class="item-text">Cell Phones</span>
+              <span class="item-arrow">
+                <img src="./img/icons/arrowr-icon.svg" alt="">
+              </span>
+            </div>
+            <div class="aside__menu-item">
+              <span class="item-icon">
+                <img src="./img/icons/tv-icon.svg" alt="">
+              </span>
+              <span class="item-text">TV & Video</span>
+              <span class="item-arrow">
+                <img src="./img/icons/arrowr-icon.svg" alt="">
+              </span>
+            </div>
+            <div class="aside__menu-item">
+              <span class="item-icon">
+                <img src="./img/icons/game-icon.svg" alt="">
+              </span>
+              <span class="item-text">Game consoles</span>
+              <span class="item-arrow">
+                <img src="./img/icons/arrowr-icon.svg" alt="">
+              </span>
+            </div>
+            <div class="aside__menu-item aside__menu-item--last">
+              <span class="item-icon">
+                <img src="./img/icons/watch-icon.svg" alt="">
+              </span>
+              <span class="item-text">Watches</span>
+              <span class="item-arrow">
+                <img src="./img/icons/arrowr-icon.svg" alt="">
+              </span>
+            </div>
+          </div>
+          <div class="aside__main-adv">
+            <div class="main__adv-text">
+              Look Up In The Sky
+              <p>Astronomy Or Astrology</p>
+            </div>
+          </div>
+        </aside>
+        <main>
+          <div class="main__head-tabs">
+            <button class="tab-btn tab-btn__most-popular">Most popular</button>
+            <button class="tab-btn tab-btn__communities">My communities</button>
+          </div>
+          <div class="main__cards">
+            <div class="m-card main__card">
+              <div class="main__card-top">
+                <div class="main__card-top--sale">
+                  <p>SALE 10%</p>
+                </div>
+                <div class="main__card-top--icons">
+                  <span class="card-top__list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="list_icon" data-name="list icon" class="cls-1"
+                        d="M990,2792h2v-2h-2v2h0Zm0,4h2v-2h-2v2h0Zm0-8h2v-2h-2v2h0Zm4,4h14v-2H994v2h0Zm0,4h14v-2H994v2h0Zm0-10v2h14v-2H994Z"
+                        transform="translate(-990 -2786)" />
+                    </svg>
+                  </span>
+                  <span class="card-top__wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18.34" viewBox="0 0 20 18.34">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="wishlist_icon" data-name="wishlist icon" class="cls-1"
+                        d="M1398.1,1801.55l-0.1.1-0.1-.1c-4.76-4.31-7.9-7.16-7.9-10.05a3.418,3.418,0,0,1,3.5-3.5,3.909,3.909,0,0,1,3.57,2.36h1.87a3.885,3.885,0,0,1,3.56-2.36,3.418,3.418,0,0,1,3.5,3.5C1406,1794.39,1402.86,1797.24,1398.1,1801.55Zm4.4-15.55a5.889,5.889,0,0,1-9,0,5.447,5.447,0,0,0-5.5,5.5c0,3.78,3.4,6.86,8.55,11.54l1.45,1.31,1.45-1.32c5.15-4.67,8.55-7.75,8.55-11.53A5.447,5.447,0,0,0,1402.5,1786Z"
+                        transform="translate(-1388 -1786)" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="main__card-img">
+                <img class="card-img" src="./img/iphone1.jpg" alt="">
+              </div>
+              <div class="main__card-product__info">
+                <div class="main__card-product_name">Iphone 6S (silver)</div>
+                <div class="main__card-product__raiting">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star-half.svg" alt="">
+                  <img src="./img/icons/star-border.svg" alt="">
+                </div>
+                <div class="main__card-product__price">
+                  <div class="product__price">$ 384.4</div>
+                  <div class="product__cart">
+                    <img src="./img/icons/cart1-icon.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-card main__card">
+              <div class="main__card-top">
+                <div class="main__card-top--sale">
+                  <p>SALE 10%</p>
+                </div>
+                <div class="main__card-top--icons">
+                  <span class="card-top__list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="list_icon" data-name="list icon" class="cls-1"
+                        d="M990,2792h2v-2h-2v2h0Zm0,4h2v-2h-2v2h0Zm0-8h2v-2h-2v2h0Zm4,4h14v-2H994v2h0Zm0,4h14v-2H994v2h0Zm0-10v2h14v-2H994Z"
+                        transform="translate(-990 -2786)" />
+                    </svg>
+                  </span>
+                  <span class="card-top__wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18.34" viewBox="0 0 20 18.34">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="wishlist_icon" data-name="wishlist icon" class="cls-1"
+                        d="M1398.1,1801.55l-0.1.1-0.1-.1c-4.76-4.31-7.9-7.16-7.9-10.05a3.418,3.418,0,0,1,3.5-3.5,3.909,3.909,0,0,1,3.57,2.36h1.87a3.885,3.885,0,0,1,3.56-2.36,3.418,3.418,0,0,1,3.5,3.5C1406,1794.39,1402.86,1797.24,1398.1,1801.55Zm4.4-15.55a5.889,5.889,0,0,1-9,0,5.447,5.447,0,0,0-5.5,5.5c0,3.78,3.4,6.86,8.55,11.54l1.45,1.31,1.45-1.32c5.15-4.67,8.55-7.75,8.55-11.53A5.447,5.447,0,0,0,1402.5,1786Z"
+                        transform="translate(-1388 -1786)" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="main__card-img">
+                <img class="card-img" src="./img/iphone2.jpg" alt="">
+              </div>
+              <div class="main__card-product__info">
+                <div class="main__card-product_name">Iphone 6S (gold)</div>
+                <div class="main__card-product__raiting">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star-half.svg" alt="">
+                  <img src="./img/icons/star-border.svg" alt="">
+                </div>
+                <div class="main__card-product__price">
+                  <div class="product__price">$ 384.4</div>
+                  <div class="product__cart">
+                    <img src="./img/icons/cart1-icon.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-card main__card">
+              <div class="main__card-top">
+                <div class="main__card-top--sale">
+                  <p>SALE 10%</p>
+                </div>
+                <div class="main__card-top--icons">
+                  <span class="card-top__list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="list_icon" data-name="list icon" class="cls-1"
+                        d="M990,2792h2v-2h-2v2h0Zm0,4h2v-2h-2v2h0Zm0-8h2v-2h-2v2h0Zm4,4h14v-2H994v2h0Zm0,4h14v-2H994v2h0Zm0-10v2h14v-2H994Z"
+                        transform="translate(-990 -2786)" />
+                    </svg>
+                  </span>
+                  <span class="card-top__wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18.34" viewBox="0 0 20 18.34">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="wishlist_icon" data-name="wishlist icon" class="cls-1"
+                        d="M1398.1,1801.55l-0.1.1-0.1-.1c-4.76-4.31-7.9-7.16-7.9-10.05a3.418,3.418,0,0,1,3.5-3.5,3.909,3.909,0,0,1,3.57,2.36h1.87a3.885,3.885,0,0,1,3.56-2.36,3.418,3.418,0,0,1,3.5,3.5C1406,1794.39,1402.86,1797.24,1398.1,1801.55Zm4.4-15.55a5.889,5.889,0,0,1-9,0,5.447,5.447,0,0,0-5.5,5.5c0,3.78,3.4,6.86,8.55,11.54l1.45,1.31,1.45-1.32c5.15-4.67,8.55-7.75,8.55-11.53A5.447,5.447,0,0,0,1402.5,1786Z"
+                        transform="translate(-1388 -1786)" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="main__card-img">
+                <img class="card-img" src="./img/iphone3.jpg" alt="">
+              </div>
+              <div class="main__card-product__info">
+                <div class="main__card-product_name">Iphone 7 Plus (black)</div>
+                <div class="main__card-product__raiting">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star-half.svg" alt="">
+                  <img src="./img/icons/star-border.svg" alt="">
+                </div>
+                <div class="main__card-product__price">
+                  <div class="product__price">$ 384.4</div>
+                  <div class="product__cart">
+                    <img src="./img/icons/cart1-icon.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-card main__card">
+              <div class="main__card-top">
+                <div class="main__card-top--sale">
+                  <p>SALE 10%</p>
+                </div>
+                <div class="main__card-top--icons">
+                  <span class="card-top__list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="list_icon" data-name="list icon" class="cls-1"
+                        d="M990,2792h2v-2h-2v2h0Zm0,4h2v-2h-2v2h0Zm0-8h2v-2h-2v2h0Zm4,4h14v-2H994v2h0Zm0,4h14v-2H994v2h0Zm0-10v2h14v-2H994Z"
+                        transform="translate(-990 -2786)" />
+                    </svg>
+                  </span>
+                  <span class="card-top__wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18.34" viewBox="0 0 20 18.34">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="wishlist_icon" data-name="wishlist icon" class="cls-1"
+                        d="M1398.1,1801.55l-0.1.1-0.1-.1c-4.76-4.31-7.9-7.16-7.9-10.05a3.418,3.418,0,0,1,3.5-3.5,3.909,3.909,0,0,1,3.57,2.36h1.87a3.885,3.885,0,0,1,3.56-2.36,3.418,3.418,0,0,1,3.5,3.5C1406,1794.39,1402.86,1797.24,1398.1,1801.55Zm4.4-15.55a5.889,5.889,0,0,1-9,0,5.447,5.447,0,0,0-5.5,5.5c0,3.78,3.4,6.86,8.55,11.54l1.45,1.31,1.45-1.32c5.15-4.67,8.55-7.75,8.55-11.53A5.447,5.447,0,0,0,1402.5,1786Z"
+                        transform="translate(-1388 -1786)" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="main__card-img">
+                <img class="card-img" src="./img/iphone4.jpg" alt="">
+              </div>
+              <div class="main__card-product__info">
+                <div class="main__card-product_name">Iphone 6S (rosegold)</div>
+                <div class="main__card-product__raiting">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star-half.svg" alt="">
+                  <img src="./img/icons/star-border.svg" alt="">
+                </div>
+                <div class="main__card-product__price">
+                  <div class="product__price">$ 384.4</div>
+                  <div class="product__cart">
+                    <img src="./img/icons/cart1-icon.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-card main__card">
+              <div class="main__card-top">
+                <div class="main__card-top--sale">
+                  <p>SALE 10%</p>
+                </div>
+                <div class="main__card-top--icons">
+                  <span class="card-top__list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="list_icon" data-name="list icon" class="cls-1"
+                        d="M990,2792h2v-2h-2v2h0Zm0,4h2v-2h-2v2h0Zm0-8h2v-2h-2v2h0Zm4,4h14v-2H994v2h0Zm0,4h14v-2H994v2h0Zm0-10v2h14v-2H994Z"
+                        transform="translate(-990 -2786)" />
+                    </svg>
+                  </span>
+                  <span class="card-top__wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18.34" viewBox="0 0 20 18.34">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="wishlist_icon" data-name="wishlist icon" class="cls-1"
+                        d="M1398.1,1801.55l-0.1.1-0.1-.1c-4.76-4.31-7.9-7.16-7.9-10.05a3.418,3.418,0,0,1,3.5-3.5,3.909,3.909,0,0,1,3.57,2.36h1.87a3.885,3.885,0,0,1,3.56-2.36,3.418,3.418,0,0,1,3.5,3.5C1406,1794.39,1402.86,1797.24,1398.1,1801.55Zm4.4-15.55a5.889,5.889,0,0,1-9,0,5.447,5.447,0,0,0-5.5,5.5c0,3.78,3.4,6.86,8.55,11.54l1.45,1.31,1.45-1.32c5.15-4.67,8.55-7.75,8.55-11.53A5.447,5.447,0,0,0,1402.5,1786Z"
+                        transform="translate(-1388 -1786)" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="main__card-img">
+                <img class="card-img" src="./img/asus-zenfone.jpg" alt="">
+              </div>
+              <div class="main__card-product__info">
+                <div class="main__card-product_name">Asus ZenFone Go ZB452KG</div>
+                <div class="main__card-product__raiting">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star-half.svg" alt="">
+                  <img src="./img/icons/star-border.svg" alt="">
+                </div>
+                <div class="main__card-product__price">
+                  <div class="product__price">$ 384.4</div>
+                  <div class="product__cart">
+                    <img src="./img/icons/cart1-icon.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-card main__card">
+              <div class="main__card-top">
+                <div class="main__card-top--sale">
+                  <p>SALE 10%</p>
+                </div>
+                <div class="main__card-top--icons">
+                  <span class="card-top__list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="list_icon" data-name="list icon" class="cls-1"
+                        d="M990,2792h2v-2h-2v2h0Zm0,4h2v-2h-2v2h0Zm0-8h2v-2h-2v2h0Zm4,4h14v-2H994v2h0Zm0,4h14v-2H994v2h0Zm0-10v2h14v-2H994Z"
+                        transform="translate(-990 -2786)" />
+                    </svg>
+                  </span>
+                  <span class="card-top__wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18.34" viewBox="0 0 20 18.34">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #d8d6d6;
+                            fill-rule: evenodd;
+                          }
+                        </style>
+                      </defs>
+                      <path id="wishlist_icon" data-name="wishlist icon" class="cls-1"
+                        d="M1398.1,1801.55l-0.1.1-0.1-.1c-4.76-4.31-7.9-7.16-7.9-10.05a3.418,3.418,0,0,1,3.5-3.5,3.909,3.909,0,0,1,3.57,2.36h1.87a3.885,3.885,0,0,1,3.56-2.36,3.418,3.418,0,0,1,3.5,3.5C1406,1794.39,1402.86,1797.24,1398.1,1801.55Zm4.4-15.55a5.889,5.889,0,0,1-9,0,5.447,5.447,0,0,0-5.5,5.5c0,3.78,3.4,6.86,8.55,11.54l1.45,1.31,1.45-1.32c5.15-4.67,8.55-7.75,8.55-11.53A5.447,5.447,0,0,0,1402.5,1786Z"
+                        transform="translate(-1388 -1786)" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="main__card-img">
+                <img class="card-img" src="./img/asus-zenfone1.jpg" alt="">
+              </div>
+              <div class="main__card-product__info">
+                <div class="main__card-product_name">Asus ZenFone Go ZB452KG</div>
+                <div class="main__card-product__raiting">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star.svg" alt="">
+                  <img src="./img/icons/star-half.svg" alt="">
+                  <img src="./img/icons/star-border.svg" alt="">
+                </div>
+                <div class="main__card-product__price">
+                  <div class="product__price">$ 384.4</div>
+                  <div class="product__cart">
+                    <img src="./img/icons/cart1-icon.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer__border">
+      <div class="container">
+        <div class="footer__top">
+          <div class="header__logo">QUANTUM</div>
+          <div class="footer__top-about">
+            <span>Shop</span>
+            <span>Journal</span>
+            <span>About</span>
+            <span>Contacts</span>
+          </div>
+          <div class="footer__top-socials">
+            <img src="./img/icons/facebook-icon.svg" alt="">
+            <img src="./img/icons/twitter-icon.svg" alt="">
+            <img src="./img/icons/instagram-icon.svg" alt="">
+            <img src="./img/icons/youtube-icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer__bottom">
+        <span class="footer__bottom-copyright">
+          <span>© 2016. Quantum UI kit</span>
+          <span>Privacy Policy</span>
+          <span>Terms of Use</span>
+        </span>
+        <span class="footer__bottom-paymethods">Accepted payment methods</span>
+        <div class="footer__bottom-paymethods__icons">
+          <img src="./img/icons/visa-icon.png" alt="">
+          <img src="./img/icons/master-card-icon.png" alt="">
+          <img src="./img/icons/pay-pal-icon.png" alt="">
+          <img src="./img/icons/amazon-icon.png" alt="">  
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
